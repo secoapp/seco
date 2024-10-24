@@ -1,0 +1,353 @@
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  right: 0;
+  border-radius: 8px;
+  top: 0;
+  width: 38%; /* Covers 30% of the width */
+  height: 100%; /* Full height */
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  overflow-y: auto; /* Enable vertical scroll */
+  overflow-x:hidden; /* Enable vertical scroll if needed */
+}
+
+.popup.show {
+  display: block; /* Show the popup when active */
+}
+
+.popup-content {
+  padding: 20px; /* Add padding for content */
+}
+
+.panel-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: var(--modal-bg-color);
+  border-bottom: 1px solid var(--divider-color);
+  padding: 0.5rem 0.75rem;
+  min-height: 3rem;
+  border-top-left-radius: 0.5rem; /* Set border radius as needed */
+  border-top-right-radius: 0.5rem; /* Set border radius as needed */
+}
+
+
+
+.close-popup-button {
+  background: grey;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+.location-map {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #EBF4FB; /* Background color for the map */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #007BFF; /* Optional: Border to simulate a map frame */
+}
+
+.map-pin {
+  width: 30px;
+  height: 30px;
+  background-color: red; /* Color for the map pin */
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  left: 50%; /* Center it */
+  transform: translateX(-50%); /* Center it */
+}
+
+.popup-image {
+  width: 100%; /* Make image responsive */
+  height: auto;
+  border-radius: 8px; /* Maintain aspect ratio */
+}
+
+.program-meta {
+  margin: 10px 0; /* Add margin for spacing */
+}
+
+.header-border {
+  border: none;
+  border-top: 2px solid var(--divider-color); /* Change this to desired border color */
+  margin: 20px 0; /* Add margin above and below the border */
+}
+
+/* Flexbox Utility Classes */
+.flex-center {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+.spread {
+  display: flex; /* Enable flexbox layout */
+  justify-content: space-between; /* Space items evenly */
+}
+
+.gap-25 {
+  gap: 0.75rem; /* Gap between flex items */
+}
+
+.full-width {
+  width: 100%; /* Full width for elements */
+}
+
+.flex-1 {
+  flex: 1; /* Allow item to grow and fill available space */
+}
+
+/* Event Link Styles */
+
+.registration-form {
+  border: 2px solid #000000; /* Change the color to your preference */
+  border-radius: 10px; /* Optional: adds rounded corners */
+  padding: 20px; /* Adds space inside the border */
+  margin: 20px; /* Optional: adds space outside the form */
+  background-color: #f9f9f9; /* Optional: background color */
+}
+
+.date-info {
+  display: flex;
+  align-items: center;
+}
+.date-border {
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px;     /* Rounded corners */
+  padding: 10px;          /* Padding inside the border */
+  display: flex;          /* Flexbox to align items */
+  align-items: center;    /* Center align items vertically */
+}
+
+.month, .day {
+  font-size: 1rem; /* Adjust size as necessary */
+  margin: 0 5px;   /* Margin on left and right */
+}
+
+.separator {
+  width: 40px;            /* Width of the horizontal line */
+  height: 1px;            /* Height of the line */
+  background-color: #888; /* Color of the line */
+  margin: 0 10px;        /* Margin around the separator */
+}
+.location-and-dates {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between date and location */
+  align-items: center; /* Center items vertically */
+}
+
+.date-and-location {
+  display: flex; /* Make date and location display in a row */
+  align-items: center; /* Center items vertically */
+}
+
+.date-display {
+  margin-right: 240px; /* Space between date and location */
+}
+
+.location-icon {
+  display: flex; /* Flexbox for icon and text */
+  align-items: center; /* Center icon and text vertically */
+}
+
+.location-icon svg {
+  margin-right: 5px; /* Space between icon and location text */
+}
+
+.deadline-heading {
+  margin-right: 15px; /* Adjust space between heading and border */
+  font-size: 1.2rem;  /* Adjust as necessary */
+}
+
+.date-border {
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px;     /* Rounded corners */
+  padding: 10px;          /* Padding inside the border */
+  display: flex;          /* Flexbox to align items */
+  flex-direction: column; /* Column layout for date details */
+}
+
+.month, .day, .full-date {
+  font-size: 1rem; /* Adjust size as necessary */
+  margin: 2px 0;   /* Space between date components */
+}
+
+
+/* Additional Styles */
+.translucent {
+  opacity: 0.9; /* Translucent effect */
+}
+.flex-center {
+  display: flex;
+   /* Center items vertically */
+  justify-content: left; /* Center items horizontally */
+}
+.event-button {
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0; /* Light grey background */
+  border: none;
+  color: #333; /* Dark text color */
+  padding: 10px 15px; /* Padding around the button */
+  border-radius: 9px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-decoration: none; /* Remove underline from text */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.event-button:hover {
+  background-color: #e0e0e0; /* Slightly darker grey on hover */
+}
+.map-placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.timeline-item {
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin: 5px 0;
+}
+
+.timeline-item h4 {
+  margin: 0;
+}
+
+.eligibility,
+.incentives,
+.organizer-info,
+.contact-info {
+  padding: 15px; /* Padding around each section */
+  background-color: #ffffff; /* White background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 15px; /* Spacing between sections */
+  border: 1px solid #e0e0e0; /* Optional light border for separation */
+}
+
+.section-title {
+  font-size: 20px; /* Font size for headings */
+  color: #333; /* Dark color for headings */
+  margin-bottom: 10px; /* Space below headings */
+  text-align: left; /* Align headings to the left */
+}
+
+.separator {
+  border: none; /* Remove default border */
+  border-top: 1px solid #ccc; /* Custom border styling */
+  margin: 15px 0; /* Margin for spacing */
+}
+
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  margin: 5px;
+}
+
+.calendar-month {
+  font-size: 12px;
+  font-weight: bold;
+  color: #666;
+}
+
+.calendar-day-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.container {
+  background-color: #222;
+  color: white;
+  font-family: sans-serif;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.message {
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Adjust width as necessary */
+  height: 60px; /* Adjust height as necessary */
+  border: 1px solid #e0e0e0; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.calendar-day:hover {
+  background-color: #f0f0f0; /* Light grey background on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.calendar-day .day-number {
+  font-size: 1.5rem; /* Larger font for day number */
+  font-weight: bold; /* Bold text */
+  color: #333; /* Dark text color */
+}
+
+.calendar-day .event-indicator {
+  width: 8px; /* Width of the event indicator */
+  height: 8px; /* Height of the event indicator */
+  border-radius: 50%; /* Circular indicator */
+  background-color: #4caf50; /* Green color for events */
+  margin-top: 4px; /* Spacing above the indicator */
+}
+
+.calendar-day .event-indicator.hidden {
+  display: none; /* Hide indicator if no events */
+}

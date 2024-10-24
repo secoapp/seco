@@ -1,0 +1,45 @@
+/* src/components/Header.css */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo, nav, and button */
+    background-color: #EBF4FB; /* Header background color */
+    padding: 10px 60px; /* Padding for the header (30px on left and right) */
+}
+
+.logo {
+    height: 25px; /* Adjust height as needed */
+}
+
+.nav {
+    flex-grow: 1; /* Allow the nav to take up available space */
+    display: flex;
+    justify-content: center; /* Center the nav items */
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.nav-item {
+    margin: 0 20px; /* Spacing between menu items */
+    cursor: pointer; /* Change cursor to pointer */
+     /* Bold text */
+}
+
+.waitlist-button {
+    background-color: #001f3f; /* Dark background for the button */
+    color: #ffffff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.waitlist-button:hover {
+    background-color: #003366; /* Darker color on hover */
+}

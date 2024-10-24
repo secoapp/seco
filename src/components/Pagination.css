@@ -1,0 +1,44 @@
+/* Pagination.css */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Space above pagination */
+  }
+  
+  /* Button styles for pagination buttons and numbers */
+  .pagination-button,
+  .pagination-number {
+    padding: 10px 15px; /* Button padding */
+    margin: 0 5px; /* Space between buttons */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: transparent; /* No background for buttons */
+    color: #000; /* Black text for all buttons */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 18px; /* Increase font size for visibility */
+  }
+  
+  /* Disabled button styles */
+  .pagination-button:disabled {
+    color: #ccc; /* Grey text for disabled button */
+    cursor: not-allowed; /* Not-allowed cursor for disabled button */
+  }
+  
+  /* Active page styles */
+  .pagination-number.active {
+    font-weight: bold; /* Bold text for active page */
+  }
+  
+  /* Hover effects for page numbers */
+  .pagination-number:hover {
+    background-color: black; /* Black background on hover */
+    color: white; /* White text on hover */
+    border-radius: 50%; /* Make the button circular */
+  }
+  
+  /* Remove hover effect for pagination buttons */
+  .pagination-button:hover:not(:disabled) {
+    background-color: transparent; /* No background change on hover */
+  }
+  

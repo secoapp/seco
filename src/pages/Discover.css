@@ -1,0 +1,108 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: bold;
+  color: #000; /* Black header */
+}
+
+
+
+.articles-container {
+  padding: 10px;
+  padding-left: 180px;
+  padding-right: 180px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+}
+
+/* General Card Styling */
+/* Pagination.css */
+
+
+.h-section {
+  margin-top: 40px; /* Space above header section */
+  text-align: center;
+}
+
+.main-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subheading {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.find-button {
+  background-color:  #12163f;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.find-button:hover {
+  background-color: #333; /* Slightly lighter black on hover */
+}
+
+.filters-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  gap: 10px;
+}
+.dropdown {
+  width: 200px; /* Increase width of the dropdown */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 25px; /* Rounded corners for the dropdown */
+}
+.dropdown option {
+  padding: 10px;
+  border-radius: 28px; /* Apply border-radius only to the dropdown menu */
+}
+.filters-container p {
+  
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif; /* Bold text for filter labels */
+}
+.filter-dropdown {
+ 
+  padding: 5px;
+}
+
+.dropdowns-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
